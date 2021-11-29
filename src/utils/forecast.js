@@ -23,7 +23,7 @@ const forecast = (name, callback) => {
           " degrees out. But it is feels like " +
           response.body.main.feels_like +
           " degrees out!. So there will be " +
-          response.body.weather[0].description
+          response.body.weather[0].description + ". And the Humidity there is " + response.body.main.humidity
       );
     }
   });
